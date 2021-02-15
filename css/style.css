@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: #323232;
+    background-image: url(/img/buildings-5965278_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input {
+    text-decoration: none;
+    color: inherit;
+}
+
+a,
+a:focus,
+a:default {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Header zone */
+.header {
+    margin-top: 40px;
+    width: 100%;
+    height: 50px;
+}
+
+.header__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__img {
+    height: 50px;
+}
+
+.menu__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: auto;
+}
+
+.item {
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.signIn__link {
+    border: solid 2px white;
+    border-radius: 40px;
+    padding: 5px 20px;
+    white-space: nowrap;
+}
+
+.user__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+    border: 2px solid grey;
+    border-radius: 40px;
+}
+
+.user__img {
+    border-radius: 39px;
+    min-height: 39px;
+    min-width: 39px;
+    max-height: 39px;
+    max-width: 39px;
+    padding-right: 0 6px;
+    margin-right: 6px;
+}
+
+.user__name {
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-clip: text;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 66%, rgba(255, 255, 255, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Login zone */
+
+.login__form {
+    width: 400px;
+    height: 560px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.55);
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0 0 5px 3px #0c0c0d; /* Параметры тени */
+    padding: 10px;
+    text-align: center;
+}
+
+.user-icon img {
+    margin-top: 30px;
+    width: 150px;
+}
+
+.login-item {
+    width: 80%;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 18px auto;
+    padding-bottom: 10px;
+}
+
+.login-item input {
+    color: white;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    padding: 10px 0;
+    width: 100%;
+    margin: auto;
+    border-bottom: 2px solid white;
+    transition: 0.4s;
+}
+
+.login-item::placeholder {
+    color: white;
+    opacity: 0;
+}
+
+.login-item input:focus {
+    transition: 0.4s;
+    border-bottom: 2px solid red;
+}
+
+.login__inputs {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.lg-btn {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+
+.singIn-btn img {
+    width: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    transition: 0.6s;
+}
+
+.singIn-btn img:hover {
+    transition: 0.6s;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.forgotPassword {
+    margin-top: 30px;
+    color: white;
+}
+
+.forgot-link {
+    text-decoration: none;
+    border-bottom: 0.5px solid white;
+    font-size: 14px;
+    line-height: 18px;
+    height: 30px;
+    width: 40px;
+    padding: 6px 10px;
+    transition: 0.4s;
+}
+
+.forgot-link:hover {
+    color: gainsboro;
+    border-bottom: 1px solid red;
+    transition: 0.4s;
+}
+
+
+/* Profile zone */
+
+.user-container {
+    width: 1120px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.user-header {
+    margin-top: 60px;
+    font-size: 36px;
+    color: white;
+    border-bottom: 2px solid rgb(235, 235, 235);
+    width: 350px;
+    padding: 6px 6px 10px 10px;
+}
+
+.user-header span {
+    line-height: 40px;
+    padding: 6px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-block {
+    margin-top: 30px;
+    width: 340px;
+    height: 540px;
+    border: 2px solid rgb(214, 205, 205);
+    box-shadow: 0 0 5px 2px rgb(139, 130, 130);
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(51, 49, 49, 0.5);
+}
+
+.block-header {
+    height: 74px;
+    text-align: center;
+    padding-top: 23px;
+    width: auto;
+    border-bottom: 2px solid rgb(214, 205, 205);
+}
+.block-header span {
+    color: white;
+    font-size: 24px;
+}
+
+.profile-img {
+    width: 230px;
+    height: 230px;
+    margin: 40px auto;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    align-content: center;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 0 5px 2px rgb(139, 130, 130);
+}
+
+.user-fullname {
+    line-height: 24px;
+    padding: 20px 10px 10px;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    border-bottom: 2px solid #fff;
+}
+
+.user-fullname span {
+    color: white;
+    font-size: 24px;
+}
+
+.personal-info {
+    width: auto;
+    margin-top: 25px;
+    padding: 0 15px;
+    color: white;
+    align-content: center;
+}
+
+.personal-info span {
+    text-align: left;
+    font-size: 16px;
+}
+
+.personal-info input {
+    margin: auto;
+    text-align: left;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1.5px solid white;
+    color: white;
+    padding: 8px 14px;
+    line-height: 24px;
+    font-size: 20px;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.personal-info input:focus {
+    transition: 0.4s;
+    border-bottom: red solid 1.5px;
+}
+
+.save-userInfo{
+    padding: 10px 0;
+    left: 50%;
+    position: absolute;   
+    transform: translate(-50%, 0);
+    color: whitesmoke;
+}
+
+.save-userInfo input{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    border: solid 2px white;
+    border-radius: 40px;
+    white-space: nowrap;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 2;
+    padding: 0 30px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.4s;
+}
+
+.save-userInfo input:hover{
+    transition: 0.4s;
+    background: rgba(255, 255, 255, 0.3);
+}
