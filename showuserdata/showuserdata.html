@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/showuserdata/showdata.css">
+    <title>Інформаційна система планування заготівлі молока</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__items">
+                <div class="logo">
+                    <a class="logo__link" href="https://www.linkedin.com/in/serhii-kysil-755741150/"
+                        target="Company Profile">
+                        <img class="logo__img" src="/img/Logo.png" alt="Logo"></a>
+                </div>
+
+                <div class="menu">
+                    <ul class="menu__items">
+                        <li class="item">
+                            <a class="item__link" href="#">Головна</a>
+                        </li>
+                        <li class="item">
+                            <a class="item__link" href="#">Новини</a>
+                        </li>
+                        <li class="item">
+                            <a class="item__link" href="/inputdata/inputdata.html">Внести дані</a>
+                        </li>
+                        <li class="item">
+                            <div class="singIn">
+                                <a class="signIn__link" href="/login/login.html">Log In</a>
+                            </div>
+                            <!-- <div class="user">
+                                <a class="user__link"  href="/userprofile/userprofile.html" >
+                                    <img src="/img/photo_2020-12-28_12-15-24.jpg" alt="user__name" class="user__img">
+                                    <span class="user__name">Mykhailo Penhercky</span>
+                                </a>
+                            </div> -->
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header> 
+
+    <div class="container">
+
+        <div class="user-dataheader">
+            <span>Serhii Kysil datas uploaded</span>
+        </div>
+
+        <table class="datas">
+            <thead>
+                <tr>
+                    <th hidden>Id </th>
+                    <th>
+                        <a>Date added</a>
+                    </th>
+                    <th>
+                        <a>Count</a>
+                    </th>
+                    <th>
+                        <a>Price for day</a>
+                    </th>
+                    <th>
+                        <a>Total</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <script> document.write(new Date().toLocaleDateString()); </script>
+                    </td>
+                    <td>5</td>
+                    <td>300</td>
+                    <td>1500</td>
+                </tr>
+                <tr>
+                    <td>
+                        <script> document.write(new Date().toLocaleDateString()); </script>
+                    </td>
+                    <td>4</td>
+                    <td>400</td>
+                    <td>1600</td>
+                </tr>
+                <tr>
+                    <td>
+                        <script> document.write(new Date().toLocaleDateString()); </script>
+                    </td>
+                    <td>10</td>
+                    <td>250</td>
+                    <td>2500</td>
+                </tr>
+                <tr>
+                    <td>
+                        <script> document.write(new Date().toLocaleDateString()); </script>
+                    </td>
+                    <td>4</td>
+                    <td>400</td>
+                    <td>1600</td>
+                </tr>
+                <tr>
+                    <td>
+                        <script> document.write(new Date().toLocaleDateString()); </script>
+                    </td>
+                    <td>10</td>
+                    <td>250</td>
+                    <td>2500</td>
+                </tr>
+
+            </tbody>
+    </div>
+</body>
+
+</html>

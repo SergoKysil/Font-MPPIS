@@ -11,7 +11,17 @@ body {
     background-color: #323232;
     background-image: url(/img/buildings-5965278_1920.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+}
+
+#root {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    line-height: 2;
 }
 
 input {
@@ -40,10 +50,11 @@ li {
 }
 
 /* Header zone */
-.header {
+header {
     margin-top: 40px;
     width: 100%;
     height: 50px;
+    margin-bottom: 40px;
 }
 
 .header__items {
@@ -56,7 +67,7 @@ li {
     height: 50px;
 }
 
-.menu__items {
+.menu ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,16 +75,25 @@ li {
     width: auto;
 }
 
-.item {
+.menu li {
     padding: 15px 20px;
     color: white;
     font-size: 20px;
 }
 
-.signIn__link {
+.singIn {
     border: solid 2px white;
     border-radius: 40px;
     padding: 5px 20px;
+    transition: 0.3s;
+}
+
+.singIn:hover {
+    transition: 0.4s;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.signIn__link {
     white-space: nowrap;
 }
 
@@ -114,8 +134,8 @@ li {
     top: 50%;
     left: 50%;
     position: absolute;
-    background: rgba(0, 0, 0, 0.55);
     transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.55);
     border-radius: 20px;
     box-shadow: 0 0 5px 3px #0c0c0d; /* Параметры тени */
     padding: 10px;
@@ -221,7 +241,7 @@ li {
     font-size: 36px;
     color: white;
     border-bottom: 2px solid rgb(235, 235, 235);
-    width: 350px;
+    width: 340px;
     padding: 6px 6px 10px 10px;
 }
 
@@ -238,12 +258,12 @@ li {
 .info-block {
     margin-top: 30px;
     width: 340px;
-    height: 540px;
-    border: 2px solid rgb(214, 205, 205);
-     box-shadow: 0 0 10px 3px rgb(202, 202, 202);
+    height: 520px;
+    box-shadow: 0 0 5px 3px #0c0c0d;
     padding: 10px;
-    border-radius: 10px;
-    background: rgba(51, 49, 49, 0.5);
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 6px #0c0c0d;
 }
 
 .block-header {
@@ -343,13 +363,15 @@ li {
     font-size: 20px;
     line-height: 2;
     padding: 0 30px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.55);
     transition: 0.4s;
 }
 
 .save-userInfo input:hover {
     transition: 0.4s;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(41, 41, 41, 0.3);
+    border: solid 2px rgba(0, 0, 0, 0.9);
+    color: yellow;
 }
 
 /* Data input zone */
@@ -404,13 +426,13 @@ li {
     line-height: 24px;
 }
 
-.submit-data{
-   margin-top: -20px;
-   padding: 10px 0;
+.submit-data {
+    margin-top: -20px;
+    padding: 10px 0;
     color: whitesmoke;
 }
 
-.submit-data input{
+.submit-data input {
     border: none;
     outline: none;
     background: none;
@@ -425,9 +447,55 @@ li {
     transition: 0.4s;
 }
 
-.submit-data input:hover{
+.submit-data input:hover {
     transition: 0.4s;
     background: rgba(255, 255, 255, 0.3);
 }
 
+/* show data */
 
+.user-dataheader {
+    margin: 60px 0;
+    font-size: 36px;
+    color: white;
+    width: auto;
+    padding: 6px 6px 10px 10px;
+    text-align: center;
+}
+
+.user-dataheader span {
+    line-height: 40px;
+    padding: 6px;
+    border-bottom: 2px solid rgb(235, 235, 235);
+}
+
+.datas {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px 6px #0c0c0d;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+}
+
+.datas th,
+td {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.datas th {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.datas td {
+    font-size: 16px;
+    line-height: 1.5;
+}
