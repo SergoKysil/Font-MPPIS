@@ -11,12 +11,12 @@
     <title>Document</title>
 </head>
 
-<body>
+<body style="background-image: url(/img/background-world-map-1.gif);">
 
 
     <header>
 
-        <div class="header__items">
+        <div class="header__items header-container">
             <div class="logo">
                 <a class="logo__link" href="https://www.linkedin.com/in/serhii-kysil-755741150/"
                     target="Company Profile">
@@ -25,15 +25,13 @@
             <div class="menu">
                 <ul class="menu__items">
                     <li class="item">
-                        <a class="item__link" href="/home/index.html">Home</a>
+                        <a class="item__link" href="/home/index.html" target="_blank">Home</a>
                     </li>
                     <li class="item">
                         <a class="item__link" href="#">News</a>
                     </li>
                     <li class="item">
-                        <div class="item__link">
-                            <a class="signIn__link" href="/login/login.html">Log In</a>
-                        </div>
+                        <a class="item__link" href="/login/login.html">Sing In</a>
                         <!-- <div class="user">
                                     <a class="user__link"  href="/userprofile/userprofile.html" >
                                         <img src="/img/photo_2020-12-28_12-15-24.jpg" alt="user__name" class="user__img">
@@ -53,131 +51,341 @@
     <div class="container">
 
 
-            <div class="profile-header">
-                <span>My Profile</span>
-            </div>
-    
-            <div class="profile-content">
-                <div class="profile-menu">
-                    <div class="menu-element">
-                        <img src="/img/Mini-pencil-icon.svg" alt="">
-                        <a href="#">Edit Profile</a>
-                        <div class="separator-menu"></div>
-                    </div>
-                    <div class="menu-element">
-                        <img src="/img/a04756181991d4ca28b5c1b0cdbf040a.svg" alt="Edit">
-                        <a href="#">Password & Security</a>
-                        <div class="separator-menu"></div>
-                    </div>
-                    <div class="menu-element">
-                        <img src="/img/iconfinder_icon-98-folder-upload_314793.svg" alt="Edit">
-                        <a href="#">Upload Data</a>
-                        <div class="separator-menu"></div>
-                    </div>
-                    <div class="menu-element">
-                        <img src="/img/PikPng.com_route-icon-png_3336056.png" alt="Edit">
-                        <a href="#">Generate Route</a>
-                        <div class="separator-menu"></div>
-                    </div>
-                </div>
-    
-    
-                <!-- <div class="profile-container">
-                    <div class="profile-content-header">Edit Profile</div>
-    
-                    <div class="two-elements">
-                        <div>
-                            <span>First Name</span>
-                            <input class="profile-input" type="text" id="last" class="firsName">
-                        </div>
-    
-                        <div>
-                            <span>Last name</span>
-                            <input class="profile-input" type="text" id="last" class="firsName">
-                        </div>
-                    </div>
-    
-                    <div>
-                        <span>Email</span>
-                        <input class="profile-input" type="text" id="last" class="firsName">
-                    </div>
-    
-                    <div>
-                        <span>Phone number</span>
-                        <input class="profile-input" type="text" id="last" class="firsName">
-                    </div>
-    
-                    <div>
-                        <span>Address</span>
-                        <input class="profile-input" type="text" id="last" class="firsName">
-                    </div>
-    
-                    <div class="two-elements">
-                        <div>
-                            <span>City</span>
-                            <input class="profile-input" type="text" id="last" class="firsName">
-                        </div>
-    
-                        <div>
-                            <span>State</span>
-                            <input class="profile-input" type="text" id="last" class="firsName">
-                        </div>
-                    </div>
-    
-                    <div class="two-elements">
-                        <div>
-                            <span>Zip code</span>
-                            <input class="profile-input" type="text" id="last" class="firsName">
-                        </div>
-    
-                        <div>
-                            <span>Country</span>
-                            <input class="profile-input" type="text" id="last" class="firsName">
-                        </div>
-                    </div>
-    
-                    <button type="submit" id="update-profile">Save</button>
-    
-                </div> -->
-
-                <div class="profile-container">
-                    <div class="profile-content-header">Change Password</div>
-                
-                    <div class="two-elements">
-                        <div class="password-req">
-                            <div class="password-req-header">Password must contains:</div>
-                
-                            <div class="password-req-body">At least 8 characters</div>
-                
-                            <div class="password-req-body">At least 1 upper case letter (A-Z)</div>
-                
-                            <div class="password-req-body">At least 1 lower case letter (a-z)</div>
-                
-                            <div class="password-req-body">At least 1 number (0-9)</div>
-                        </div>
-                
-                        <div class="passwords-inputs">
-                
-                            <input type="password">
-                            <input type="password">
-                            <input type="password">
-                        </div>
-                
-                    </div>
-                   
-                </div>
-            
+        <div class="profile-header">
+            <span>My Profile</span>
         </div>
-       
-           
+
+        <div class="profile-content">
+            <div class="profile-menu tabs">
+
+                <nav class="tabs__navigation">
+                    <a class="tabs__link " href="#profile-info">
+                        <img class="profile-menu-img" src="/img/Mini-pencil-icon.svg" alt="Info">
+                        Edit Profile<div class="separator-menu"></div></a>
+
+
+                    <a class="tabs__link " href="#profile-password">
+                        <img class="profile-menu-img" src="/img/a04756181991d4ca28b5c1b0cdbf040a.svg" alt="Password">
+                        Password & Security<div class="separator-menu"></div></a>
+
+                    <a class="tabs__link " href="#upload-data">
+                        <img class="profile-menu-img" src="/img/iconfinder_icon-98-folder-upload_314793.svg"
+                            alt="Password">
+                        Upload Data<div class="separator-menu"></div></a>
+
+                    <a class="tabs__link " href="#show-data">
+                        <img class="profile-menu-img" src="/img/clipart2355571.png" alt="Password">
+                        Show Upload History<div class="separator-menu"></div></a>
+
+                    <a class="tabs__link tabs__link--active" href="#generate-route">
+                        <img class="profile-menu-img" src="/img/PikPng.com_route-icon-png_3336056.png" alt="Password">
+                        Generate Route<div class="separator-menu"></div></a>
+                </nav>
+
+            </div>
+
+            <ul class="tabs__section">
+                <li id="profile-info">
+                    <div class="profile-container">
+                        <div class="profile-content-header">Edit Profile</div>
+                        <div class="profile-zone-content">
+                            <div class="profile-zone">
+                                <div class="two-elements">
+                                    <div>
+                                        <span>First Name</span>
+                                        <input class="profile-input" type="text" id="last" class="firsName">
+                                    </div>
+        
+                                    <div>
+                                        <span>Last name</span>
+                                        <input class="profile-input" type="text" id="last" class="firsName">
+                                    </div>
+                                </div>
+        
+                                <div>
+                                    <span>Email</span>
+                                    <input class="profile-input" type="text" id="last" class="firsName">
+                                </div>
+        
+                                <div>
+                                    <span>Phone number</span>
+                                    <input class="profile-input" type="text" id="last" class="firsName">
+                                </div>
+        
+                                <div>
+                                    <span>Address</span>
+                                    <input class="profile-input" type="text" id="last" class="firsName">
+                                </div>
+        
+                                <div class="two-elements">
+                                    <div>
+                                        <span>City</span>
+                                        <input class="profile-input" type="text" id="last" class="firsName">
+                                    </div>
+        
+                                    <div>
+                                        <span>State</span>
+                                        <input class="profile-input" type="text" id="last" class="firsName">
+                                    </div>
+                                </div>
+        
+                                <div class="two-elements">
+                                    <div>
+                                        <span>Zip code</span>
+                                        <input class="profile-input" type="text" id="last" class="firsName">
+                                    </div>
+        
+                                    <div>
+                                        <span>Country</span>
+                                        <input class="profile-input" type="text" id="last" class="firsName">
+                                    </div>
+                                </div>
+                                <div class="wrapper_button" style="margin-top: 30px;">
+                                    <button type="submit" class="button">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                            
+                       
+
+                    </div>
+                </li>
+
+                <li id="profile-password">
+                    <div class="profile-container">
+                        <div class="profile-content-header">Change Password</div>
+                        <div class="password-zone">
+                            <div class="two-elements">
+                                <div class="password-req">
+                                    <div class="password-req-header">Password must contains:</div>
+                                    <div class="password-req-body">At least 8 characters</div>
+    
+                                    <div class="password-req-body">At least 1 upper case letter (A-Z)</div>
+    
+                                    <div class="password-req-body">At least 1 lower case letter (a-z)</div>
+    
+                                    <div class="password-req-body">At least 1 number (0-9)</div>
+                                </div>
+    
+                                <div class="passwords-inputs">
+                                    <input type="password" placeholder="Password">
+    
+                                    <input type="password" placeholder="New Password">
+    
+                                    <input type="password" placeholder="Confirm new password">
+                                </div>
+    
+                            </div>
+    
+                            <div class="wrapper_button">
+                                <button type="submit" class="button">Save</button>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </li>
+
+                <li id="upload-data">
+                    <div class="profile-container">
+                        <div class="profile-content-header">
+                            Upload Your Data
+                        </div>
+                        <div class="data-zone">
+                            <div class="data-info">
+                                <span class="info-text">DATE:
+                                    <script> document.write(new Date().toLocaleDateString()); </script>
+                                </span>
+                            </div>
+                            <div class="data-info">
+                                <input type="text" placeholder="COUNT" >
+                            </div>
+                            <div class="wrapper_button">
+                                <button class="button" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </li>
+
+                <li id="show-data">
+                    <div class="profile-container">
+                        <div class="profile-content-header">Your Data History</div>
+
+                        <table class="datas">
+                            <thead>
+                                <tr>
+                                    <th hidden>Id </th>
+                                    <th>
+                                        <a>Date added</a>
+                                    </th>
+                                    <th>
+                                        <a>Count</a>
+                                    </th>
+                                    <th>
+                                        <a>Price for day</a>
+                                    </th>
+                                    <th>
+                                        <a>Total</a>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <script> document.write(new Date().toLocaleDateString());</script>
+                                    </td>
+                                    <td>5</td>
+                                    <td>300</td>
+                                    <td>1500</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <script> document.write(new Date().toLocaleDateString());</script>
+                                    </td>
+                                    <td>4</td>
+                                    <td>400</td>
+                                    <td>1600</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <script> document.write(new Date().toLocaleDateString());</script>
+                                    </td>
+                                    <td>10</td>
+                                    <td>250</td>
+                                    <td>2500</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <script> document.write(new Date().toLocaleDateString());</script>
+                                    </td>
+                                    <td>4</td>
+                                    <td>400</td>
+                                    <td>1600</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <script> document.write(new Date().toLocaleDateString());</script>
+                                    </td>
+                                    <td>10</td>
+                                    <td>250</td>
+                                    <td>2500</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+
+                <li id="generate-route">
+                    <div class="profile-container">
+                        <div class="profile-content-header">Routes</div>
+
+                        <div class="accordion-wrapper">
+                            <div class="accordion">
+                              <input class="acc-input" type="radio" name="radio-a" id="check1" checked>
+                              <label class="accordion-label" for="check1">First Route</label>
+                              <div class="accordion-content">
+                                <p>&#8226; Count of milk (liters): <b>800</b> </p>
+                                <p>&#8226; Count of kilometers: <b>47</b> </p>
+                                <p>&#8226; Count of fuel: (liters) ~<b>12</b> </p>
+                                <br>
+                                <p>&#8226; Nulla St. Mankato Mississippi 96522 
+                                    <img src="/img/Feather-arrows-arrow-right.svg" alt="To"> 
+                                    Fusce Rd.
+                                    Frederick Nebraska 20620 
+                                    <img src="/img/Feather-arrows-arrow-right.svg" alt="To">  Ullamcorper. Street
+                                    Roseville NH 11523 <img src="/img/Feather-arrows-arrow-right.svg" alt="To"> 
+                                    Sit Rd.
+                                    Azusa New York 39531
+                                    <img src="/img/Feather-arrows-arrow-right.svg" alt="To">
+                                    Dictum Av.
+                                    San Antonio MI 47096 &#8226;
+                                </p>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <input class="acc-input" type="radio" name="radio-a" id="check2">
+                              <label class="accordion-label" for="check2">Second Route</label>
+                              <div class="accordion-content">
+                                <p>I hope you are enjoing the video, don't forget to give your feedback in comment section</p>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <input class="acc-input" type="radio" name="radio-a" id="check3">
+                              <label class="accordion-label" for="check3">Third Route</label>
+                              <div class="accordion-content">
+                                <p>If you liked then don't forget to subscribe the channel for latest videos. </p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
 
     </div>
+
+
 
 
     
     <footer class="footer">
         <div class="footer-separator"></div>
+
+        <div class="footer-items">
+
+            <div class="foter-left-tems">
+                <div class="footer-logo">
+                    <a class="logo__link" href="https://www.linkedin.com/in/serhii-kysil-755741150/"
+                        target="Company Profile">
+                        <img class="footer-img-logo" src="/img/Logo.png" alt="Logo"></a>
+                </div>
+
+                <div class="footer-policy">&#169 2021 | <b>Serhii Kysil</b> <br> Copy of materials without author agreement is forbidden!</div>
+            </div>
+
+            <div class="footer-right-items">
+                <a class="logo__link" href="https://www.linkedin.com/in/serhii-kysil-755741150/"
+                target="Company Profile">
+                <img class="footer-img" src="/img/linkedin.png" alt="Linkedin"></a>
+                <a class="logo__link" href="https://www.facebook.com/profile.php?id=100017218084599"
+                target="Company Facebook">
+                <img class="footer-img" src="/img/facebook.png" alt="Facebook"></a>
+                <a class="logo__link" href="https://www.instagram.com/skisluy19/"
+                target="Company Instagram">
+                <img class="footer-img" src="/img/instagram.png" alt="Instagram"></a>
+                <a class="logo__link" href="https://github.com/SergoKysil/"
+                target="Company GitHub">
+                <img class="footer-img" src="/img/github-sign.png" alt="GitHub"></a> 
+            </div>
+            
+
+
+        </div>
+       
+      
     </footer>
+
+
+
+
+    <script src="/js/puretabs.js"></script>
+    <script>
+        pureTabs.init('tabs__link', 'tabs__link--active');
+    </script>
+
+
+    <script>/* http://prismjs.com/download.html?themes=prism&languages=markup+clike+javascript */
+        self = "undefined" != typeof window ? window : "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? self : {}; var Prism = function () { var e = /\blang(?:uage)?-(?!\*)(\w+)\b/i, t = self.Prism = { util: { encode: function (e) { return e instanceof n ? new n(e.type, t.util.encode(e.content), e.alias) : "Array" === t.util.type(e) ? e.map(t.util.encode) : e.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/\u00a0/g, " ") }, type: function (e) { return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1] }, clone: function (e) { var n = t.util.type(e); switch (n) { case "Object": var a = {}; for (var r in e) e.hasOwnProperty(r) && (a[r] = t.util.clone(e[r])); return a; case "Array": return e.map(function (e) { return t.util.clone(e) }) }return e } }, languages: { extend: function (e, n) { var a = t.util.clone(t.languages[e]); for (var r in n) a[r] = n[r]; return a }, insertBefore: function (e, n, a, r) { r = r || t.languages; var i = r[e]; if (2 == arguments.length) { a = arguments[1]; for (var l in a) a.hasOwnProperty(l) && (i[l] = a[l]); return i } var s = {}; for (var o in i) if (i.hasOwnProperty(o)) { if (o == n) for (var l in a) a.hasOwnProperty(l) && (s[l] = a[l]); s[o] = i[o] } return t.languages.DFS(t.languages, function (t, n) { n === r[e] && t != e && (this[t] = s) }), r[e] = s }, DFS: function (e, n, a) { for (var r in e) e.hasOwnProperty(r) && (n.call(e, r, e[r], a || r), "Object" === t.util.type(e[r]) ? t.languages.DFS(e[r], n) : "Array" === t.util.type(e[r]) && t.languages.DFS(e[r], n, r)) } }, highlightAll: function (e, n) { for (var a, r = document.querySelectorAll('code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'), i = 0; a = r[i++];)t.highlightElement(a, e === !0, n) }, highlightElement: function (a, r, i) { for (var l, s, o = a; o && !e.test(o.className);)o = o.parentNode; if (o && (l = (o.className.match(e) || [, ""])[1], s = t.languages[l]), s) { a.className = a.className.replace(e, "").replace(/\s+/g, " ") + " language-" + l, o = a.parentNode, /pre/i.test(o.nodeName) && (o.className = o.className.replace(e, "").replace(/\s+/g, " ") + " language-" + l); var u = a.textContent; if (u) { u = u.replace(/^(?:\r?\n|\r)/, ""); var g = { element: a, language: l, grammar: s, code: u }; if (t.hooks.run("before-highlight", g), r && self.Worker) { var c = new Worker(t.filename); c.onmessage = function (e) { g.highlightedCode = n.stringify(JSON.parse(e.data), l), t.hooks.run("before-insert", g), g.element.innerHTML = g.highlightedCode, i && i.call(g.element), t.hooks.run("after-highlight", g) }, c.postMessage(JSON.stringify({ language: g.language, code: g.code })) } else g.highlightedCode = t.highlight(g.code, g.grammar, g.language), t.hooks.run("before-insert", g), g.element.innerHTML = g.highlightedCode, i && i.call(a), t.hooks.run("after-highlight", g) } } }, highlight: function (e, a, r) { var i = t.tokenize(e, a); return n.stringify(t.util.encode(i), r) }, tokenize: function (e, n) { var a = t.Token, r = [e], i = n.rest; if (i) { for (var l in i) n[l] = i[l]; delete n.rest } e: for (var l in n) if (n.hasOwnProperty(l) && n[l]) { var s = n[l]; s = "Array" === t.util.type(s) ? s : [s]; for (var o = 0; o < s.length; ++o) { var u = s[o], g = u.inside, c = !!u.lookbehind, f = 0, h = u.alias; u = u.pattern || u; for (var p = 0; p < r.length; p++) { var d = r[p]; if (r.length > e.length) break e; if (!(d instanceof a)) { u.lastIndex = 0; var m = u.exec(d); if (m) { c && (f = m[1].length); var y = m.index - 1 + f, m = m[0].slice(f), v = m.length, k = y + v, b = d.slice(0, y + 1), w = d.slice(k + 1), N = [p, 1]; b && N.push(b); var O = new a(l, g ? t.tokenize(m, g) : m, h); N.push(O), w && N.push(w), Array.prototype.splice.apply(r, N) } } } } } return r }, hooks: { all: {}, add: function (e, n) { var a = t.hooks.all; a[e] = a[e] || [], a[e].push(n) }, run: function (e, n) { var a = t.hooks.all[e]; if (a && a.length) for (var r, i = 0; r = a[i++];)r(n) } } }, n = t.Token = function (e, t, n) { this.type = e, this.content = t, this.alias = n }; if (n.stringify = function (e, a, r) { if ("string" == typeof e) return e; if ("Array" === t.util.type(e)) return e.map(function (t) { return n.stringify(t, a, e) }).join(""); var i = { type: e.type, content: n.stringify(e.content, a, r), tag: "span", classes: ["token", e.type], attributes: {}, language: a, parent: r }; if ("comment" == i.type && (i.attributes.spellcheck = "true"), e.alias) { var l = "Array" === t.util.type(e.alias) ? e.alias : [e.alias]; Array.prototype.push.apply(i.classes, l) } t.hooks.run("wrap", i); var s = ""; for (var o in i.attributes) s += o + '="' + (i.attributes[o] || "") + '"'; return "<" + i.tag + ' class="' + i.classes.join(" ") + '" ' + s + ">" + i.content + "</" + i.tag + ">" }, !self.document) return self.addEventListener ? (self.addEventListener("message", function (e) { var n = JSON.parse(e.data), a = n.language, r = n.code; self.postMessage(JSON.stringify(t.util.encode(t.tokenize(r, t.languages[a])))), self.close() }, !1), self.Prism) : self.Prism; var a = document.getElementsByTagName("script"); return a = a[a.length - 1], a && (t.filename = a.src, document.addEventListener && !a.hasAttribute("data-manual") && document.addEventListener("DOMContentLoaded", t.highlightAll)), self.Prism }(); "undefined" != typeof module && module.exports && (module.exports = Prism);;
+        Prism.languages.markup = { comment: /<!--[\w\W]*?-->/, prolog: /<\?.+?\?>/, doctype: /<!DOCTYPE.+?>/, cdata: /<!\[CDATA\[[\w\W]*?]]>/i, tag: { pattern: /<\/?[\w:-]+\s*(?:\s+[\w:-]+(?:=(?:("|')(\\?[\w\W])*?\1|[^\s'">=]+))?\s*)*\/?>/i, inside: { tag: { pattern: /^<\/?[\w:-]+/i, inside: { punctuation: /^<\/?/, namespace: /^[\w-]+?:/ } }, "attr-value": { pattern: /=(?:('|")[\w\W]*?(\1)|[^\s>]+)/i, inside: { punctuation: /=|>|"/ } }, punctuation: /\/?>/, "attr-name": { pattern: /[\w:-]+/, inside: { namespace: /^[\w-]+?:/ } } } }, entity: /&#?[\da-z]{1,8};/i }, Prism.hooks.add("wrap", function (t) { "entity" === t.type && (t.attributes.title = t.content.replace(/&amp;/, "&")) });;
+        Prism.languages.clike = { comment: [{ pattern: /(^|[^\\])\/\*[\w\W]*?\*\//, lookbehind: !0 }, { pattern: /(^|[^\\:])\/\/.*/, lookbehind: !0 }], string: /("|')(\\\n|\\?.)*?\1/, "class-name": { pattern: /((?:(?:class|interface|extends|implements|trait|instanceof|new)\s+)|(?:catch\s+\())[a-z0-9_\.\\]+/i, lookbehind: !0, inside: { punctuation: /(\.|\\)/ } }, keyword: /\b(if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/, "boolean": /\b(true|false)\b/, "function": { pattern: /[a-z0-9_]+\(/i, inside: { punctuation: /\(/ } }, number: /\b-?(0x[\dA-Fa-f]+|\d*\.?\d+([Ee]-?\d+)?)\b/, operator: /[-+]{1,2}|!|<=?|>=?|={1,3}|&{1,2}|\|?\||\?|\*|\/|~|\^|%/, ignore: /&(lt|gt|amp);/i, punctuation: /[{}[\];(),.:]/ };;
+        Prism.languages.javascript = Prism.languages.extend("clike", { keyword: /\b(break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|false|finally|for|function|get|if|implements|import|in|instanceof|interface|let|new|null|package|private|protected|public|return|set|static|super|switch|this|throw|true|try|typeof|var|void|while|with|yield)\b/, number: /\b-?(0x[\dA-Fa-f]+|\d*\.?\d+([Ee][+-]?\d+)?|NaN|-?Infinity)\b/, "function": /(?!\d)[a-z0-9_$]+(?=\()/i }), Prism.languages.insertBefore("javascript", "keyword", { regex: { pattern: /(^|[^/])\/(?!\/)(\[.+?]|\\.|[^/\r\n])+\/[gim]{0,3}(?=\s*($|[\r\n,.;})]))/, lookbehind: !0 } }), Prism.languages.markup && Prism.languages.insertBefore("markup", "tag", { script: { pattern: /<script[\w\W]*?>[\w\W]*?<\/script>/i, inside: { tag: { pattern: /<script[\w\W]*?>|<\/script>/i, inside: Prism.languages.markup.tag.inside }, rest: Prism.languages.javascript }, alias: "language-javascript" } });;</script>
+
+
+
+
+
 
 
 </body>
